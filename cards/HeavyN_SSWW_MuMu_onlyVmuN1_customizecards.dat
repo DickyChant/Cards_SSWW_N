@@ -1,7 +1,7 @@
 set param_card  mass 5 4.700000e+00
 set param_card  mass 6 1.729000e+02
 set param_card  mass 15 1.777000e+00 
-set param_card  mass 23 9.118760e+01
+set param_card  mass 23 9.118800e+01
 set param_card  mass 25 1.251000e+02
 set param_card  mass 9900012 3.000000e+02 
 set param_card  mass 9900014 1.000000e+10 
