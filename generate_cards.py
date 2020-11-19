@@ -16,6 +16,13 @@ for mass in [1500,1750,2000,2500,5000,7500,10000,15000,20000]:
                     wf.write(rc)
                     wf.close()
                 f.close()
+        elif "proc_card" in name:
+            with open(f"cards/{name}","r") as f:
+                rc = f.read().replace("output HeavyN_ppMuMu_onlymuN1 -nojpeg " , f"output HeavyN_ppMuMu_onlymuN1_M{mass} -nojpeg ")
+                with open(f"{carddir}/{newname}","w") as wf:
+                    wf.write(rc)
+                    wf.close()
+                f.close()
         else:
             os.system(f"cp cards/{name} {carddir}/{newname}")
 
